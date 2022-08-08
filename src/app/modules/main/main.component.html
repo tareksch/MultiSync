@@ -1,0 +1,59 @@
+<div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper" [ngClass]="status ? 'hide' : 'show'">
+        <div class="sidebar-heading header-style">MultiSync </div>
+        <div class="list-group list-group-flush m-2">
+            <span class="d-flex " routerLinkActive="active" [routerLink]="'/home'">
+                <h4>Home</h4>
+            </span>
+        </div>
+        <div class="list-group list-group-flush m-2">
+            <span class="d-flex ">
+                <h4>Essentials</h4>
+            </span>
+            <a [routerLink]="'/getting-started'" routerLinkActive="active" class="link-style  bg-light">getting-started</a>
+            <a [routerLink]="''" routerLinkActive="active" class="link-style bg-light">What is MultiSync?</a>
+            <a [routerLink]="''" routerLinkActive="active" class="link-style bg-light">Commmon questions</a>
+        </div>
+        <div class="list-group list-group-flush m-2">
+            <span class="d-flex ">
+                <h4>Pricing</h4>
+            </span>
+            <a [routerLink]="'/pricing'" routerLinkActive="active" class="link-style  bg-light">Pricing overView</a>
+    </div>
+        <div class="list-group list-group-flush m-2">
+            <span class="d-flex ">
+                <h4>Guides</h4>
+            </span>
+            <a [routerLink]="''" routerLinkActive="active" class="link-style  bg-light">Creating a player controller</a>
+            <a [routerLink]="''" routerLinkActive="active" class="link-style bg-light">Upgrade</a>
+            <a [routerLink]="''" routerLinkActive="active" class="link-style bg-light">Commmon questions</a>
+        </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <div class="container-fluid">
+                <button class="btn btn-primary" (click)="clickEvent()"><span
+                        class="navbar-toggler-icon"></span></button>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="button">Search</button>
+                </form>
+
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
