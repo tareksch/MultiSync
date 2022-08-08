@@ -1,3 +1,7 @@
+
+<title>MultiSync</title>
+<meta name="MultiSync" content="MultiSync is a complete networking solution for Unity">
+<meta http-equiv="X-UA-Compatible" content="MultiSync is a complete networking solution for Unity">
 <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
@@ -13,8 +17,8 @@
                 <h4>Essentials</h4>
             </span>
             <a [routerLink]="'/getting-started'" routerLinkActive="active" class="link-style  bg-light">getting-started</a>
-            <a [routerLink]="''" routerLinkActive="active" class="link-style bg-light">What is MultiSync?</a>
-            <a [routerLink]="''" routerLinkActive="active" class="link-style bg-light">Commmon questions</a>
+            <a  class="link-style bg-light">What is MultiSync?</a>
+            <a  class="link-style bg-light">Commmon questions</a>
         </div>
         <div class="list-group list-group-flush m-2">
             <span class="d-flex ">
@@ -26,9 +30,17 @@
             <span class="d-flex ">
                 <h4>Guides</h4>
             </span>
-            <a [routerLink]="''" routerLinkActive="active" class="link-style  bg-light">Creating a player controller</a>
-            <a [routerLink]="''" routerLinkActive="active" class="link-style bg-light">Upgrade</a>
-            <a [routerLink]="''" routerLinkActive="active" class="link-style bg-light">Commmon questions</a>
+            <a [routerLink]="'/Guides'" routerLinkActive="active" class="link-style  bg-light">Creating a player controller</a>
+            <a  class="link-style bg-light">Upgrade</a>
+            <a  class="link-style bg-light">Commmon questions</a>
+        </div>
+        <div class="list-group list-group-flush m-2">
+            <span class="d-flex ">
+                <h4>Architecture</h4>
+            </span>
+            <a [routerLink]="'/Architecture'" routerLinkActive="active" class="link-style  bg-light">Architecture</a>
+            <a  class="link-style bg-light">Unity Client</a>
+            <a  class="link-style bg-light">Cloud infrastructure</a>
         </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -57,3 +69,8 @@
 
 </div>
 <!-- /#wrapper -->
+<footer id="sticky-footer" class="flex-shrink-0 py-4 bg-light text-white-50">
+    <div style="color: black;" class="container text-center">
+      <small>Copyright &copy; MultiSync All rights reserved.</small>
+    </div>
+  </footer>

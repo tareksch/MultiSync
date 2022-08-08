@@ -1,0 +1,14 @@
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  p{
+    line-height: 1.7rem;
+  }
+
+  a{
+    color: #0054ff;
+    font-weight: 500;
+    text-decoration: none;
+  }
